@@ -1,11 +1,15 @@
 package beans;
 
 import javax.enterprise.inject.Model;
+import restfortherest.Document;
+
+
 
 @Model
 public class DocumentBean {
 
 	private String libelle;
+	
 	public DocumentBean() {
 		
 	}
