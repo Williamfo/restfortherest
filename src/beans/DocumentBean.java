@@ -3,7 +3,6 @@ package beans;
 import javax.enterprise.inject.Model;
 
 import dao.DocumentDAOInterface;
-import restfortherest.Document;
 
 
 
