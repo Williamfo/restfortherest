@@ -1,12 +1,14 @@
 package beans;
 
 import javax.enterprise.inject.Model;
+
+import dao.DocumentDAOInterface;
 import restfortherest.Document;
 
 
 
 @Model
-public class DocumentBean {
+public class DocumentBean implements DocumentDAOInterface {
 
 	private String libelle;
 	

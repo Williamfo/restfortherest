@@ -2,6 +2,6 @@ package dao;
 
 public interface DocumentDAOInterface {
 	
-	public String getDoc();
+	public String save();
 
 }
