@@ -1,7 +1,12 @@
 package restfortherest;
 
 import java.io.Serializable;
+
 import javax.persistence.*;
+import javax.ws.rs.ApplicationPath;
+import javax.ws.rs.core.Application;
+import javax.xml.bind.annotation.XmlRootElement;
+
 import java.math.BigDecimal;
 
 
@@ -11,7 +16,9 @@ import java.math.BigDecimal;
  */
 @Entity
 @NamedQuery(name="Document.findAll", query="SELECT d FROM Document d")
-public class Document implements Serializable {
+@ApplicationPath("/restfortherest")
+@XmlRootElement(name="Document")
+public class Document extends Application implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
