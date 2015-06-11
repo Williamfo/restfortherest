@@ -17,6 +17,7 @@ import java.math.BigDecimal;
 @Entity
 @NamedQuery(name="Document.findAll", query="SELECT d FROM Document d")
 @ApplicationPath("/restfortherest")
+@Table(name="document")
 @XmlRootElement(name="Document")
 public class Document extends Application implements Serializable {
 	private static final long serialVersionUID = 1L;

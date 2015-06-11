@@ -9,5 +9,5 @@
   </PROCESS-ITEM>
  </PROCESS-ITEM>
  <PROCESS-ITEM NAME="rules:#ok.xhtml" PATH="/ok.xhtml"
-  SHAPE="208,88,50,25" model-entity="JSFProcessGroup" persistent="true"/>
+  SHAPE="408,256,50,25" model-entity="JSFProcessGroup" persistent="true"/>
 </PROCESS>
