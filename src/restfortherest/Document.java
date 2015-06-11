@@ -1,13 +1,14 @@
 package restfortherest;
 
 import java.io.Serializable;
-
-import javax.persistence.*;
-import javax.ws.rs.ApplicationPath;
-import javax.ws.rs.core.Application;
-import javax.xml.bind.annotation.XmlRootElement;
-
 import java.math.BigDecimal;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.NamedQuery;
+import javax.persistence.Table;
+import javax.xml.bind.annotation.XmlRootElement;
 
 
 /**
@@ -16,13 +17,13 @@ import java.math.BigDecimal;
  */
 @Entity
 @NamedQuery(name="Document.findAll", query="SELECT d FROM Document d")
-@ApplicationPath("/restfortherest")
 @Table(name="document")
-@XmlRootElement(name="Document")
-public class Document extends Application implements Serializable {
+@XmlRootElement(name="document")
+public class Document implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Integer id;
 
 	private byte[] file;
