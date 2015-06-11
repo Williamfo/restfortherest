@@ -23,7 +23,6 @@ public class DocumentDAO implements DocumentDAOInterface {
 		return null;
 	}
 
-	@Override
 	public List<Document> findDocuments() {
 		return em.createNamedQuery("Document.findAll").getResultList();
 	}

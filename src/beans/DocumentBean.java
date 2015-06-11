@@ -10,7 +10,7 @@ import dao.DocumentDAOInterface;
 
 
 @Model
-public class DocumentBean implements DocumentDAOInterface {
+public class DocumentBean {
 
 	private String libelle;
 	
@@ -29,12 +29,6 @@ public class DocumentBean implements DocumentDAOInterface {
 	public String save() {
 		
 		return "ok";
-	}
-
-	@Override
-	public List<Document> findDocuments() {
-		// TODO Auto-generated method stub
-		return null;
 	}
 
 }
